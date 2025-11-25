@@ -1,0 +1,9 @@
+# Archivos compilados
+*.class
+
+# Archivos de sistema
+.DS_Store
+
+# Librerías (el JAR es muy grande)
+libs/
+*.jar

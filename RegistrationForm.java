@@ -3,10 +3,9 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.sql.*;
 
-// ventana pa registrar nuevo user
+// ventana para registrar nuevo user
 public class RegistrationForm extends JFrame {
 
-    // campos donde escribe su info
     JTextField campoUsuario;
     JTextField campoNombre;
     JTextField campoApellido;

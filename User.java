@@ -1,7 +1,6 @@
 
 public class User {
 
-    // aqui guardamo todo lo del user
     private int idUsuario;
     private String usuario;
     private String nombre;

@@ -12,14 +12,14 @@ public class MainFrame extends JFrame {
     DefaultTableModel modeloTabla; //  guardo los datos de la tabla
     JTable tabla; // donde muestro los datos
 
-    public MainFrame(User usuario, LoginForm loginForm) { // el constructor de todo eso
+    public MainFrame(User usuario, LoginForm loginForm) {
         this.usuario = usuario;
         this.loginForm = loginForm;
     }
 
     // este metodo crea toda la ventana
     public void initialize(boolean mostrar) {
-        setTitle("Dashboard - Sistema");
+        setTitle("Sistema");
         setSize(1200, 650);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -101,8 +101,7 @@ public class MainFrame extends JFrame {
         };
 
         
-        cargarDatos(); // cargo los dato de mysql a la tabla
-
+        cargarDatos(); 
 
         // creo la tabla y le pongo el modelo
         tabla = new JTable(modeloTabla);
@@ -224,7 +223,7 @@ public class MainFrame extends JFrame {
         }
     }
 
-    // este metodo guarda lo cambios de mysql
+    //  metodo guarda lo cambios de mysql
     void guardar() {
         System.out.println("guardando cambios");
 
@@ -298,10 +297,9 @@ public class MainFrame extends JFrame {
 
     // metodo eliminar un user
     void eliminar() {
-        int fila = tabla.getSelectedRow();         // para ver la fila q selecciono
+        int fila = tabla.getSelectedRow();// para ver la fila q selecciono
 
 
-        // validamos q ue selecciono una fila
         if (fila == -1) {
             JOptionPane.showMessageDialog(this, "selecciona una fila primero");
             return;
