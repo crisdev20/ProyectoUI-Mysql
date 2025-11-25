@@ -4,9 +4,8 @@ Sistema de gestión de usuarios con login, registro y dashboard.
 
 ## Requisitos
 
-- Java 8 o superior
-- MySQL/MariaDB
-- MySQL Connector/J 9.5.0 o superior
+- Java 8 
+- MySQL Connector
 
 ## Configuración de Base de Datos
 
@@ -33,11 +32,6 @@ CREATE TABLE IF NOT EXISTS usuarios (
 2. Crea una carpeta `libs/` en el directorio del proyecto
 3. Coloca el JAR descargado en `libs/`
 
-## Compilar
-
-```bash
-javac -cp ".:libs/mysql-connector-j-9.5.0.jar" *.java
-```
 
 ## Ejecutar
 
@@ -50,14 +44,10 @@ java -cp ".:libs/mysql-connector-j-9.5.0.jar" LoginForm
 - Login con validación de campos
 - Registro de usuarios con todos los campos obligatorios
 - Confirmación de contraseña
-- Dashboard con perfil de usuario
-- Tabla editable de usuarios (CRUD completo)
-- Actualizar y eliminar usuarios
-- Cerrar sesión
+- Tabla editable de usuarios
 
 ## Validaciones
 
 - Campos vacíos en login muestran mensaje específico
 - Validación individual de campos en registro
 - Verificación de coincidencia de contraseñas
-- Contraseñas ocultas con asteriscos
